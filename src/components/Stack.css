@@ -1,0 +1,49 @@
+.stack-section {
+  background: var(--white);
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.stack-card {
+  padding: 2.5rem;
+}
+
+.stack-title {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-family: var(--font-display);
+}
+
+.stack-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.stack-pill {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  background: var(--bg-subtle);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+.stack-pill:hover {
+  background: var(--white);
+  border-color: var(--accent-mid);
+  color: var(--accent-start);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 768px) {
+  .stack-grid { grid-template-columns: 1fr; }
+}
